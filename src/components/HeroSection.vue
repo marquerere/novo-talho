@@ -1,9 +1,11 @@
 <template>
   <div class="flex flex-col justify-evenly">
     <div
-      class="flex flex-col items-center justify-between px-16 py-8 xl:px-64 xl:flex-row "
+      class="flex flex-col items-center justify-between px-8 py-8 xl:px-64 xl:flex-row "
     >
-      <div class="flex flex-col items-center xl:items-start">
+      <div
+        class="flex flex-col items-center text-center xl:text-left xl:items-start"
+      >
         <span class="text-4xl font-bold tracking-tight uppercase">
           Confie na carne que consome.
         </span>
@@ -11,7 +13,7 @@
           Escolha qualidade, sem abdicar do melhor preço.
         </span>
         <button
-          class="inline-flex px-8 py-4 mt-8 text-lg font-semibold text-white uppercase transition bg-red-500 rounded hover:bg-red-700"
+          class="flex flex-row justify-center w-full px-8 py-4 mt-8 text-lg font-semibold text-center text-white uppercase transition bg-red-500 rounded hover:bg-red-700 sm:w-auto sm:text-left"
         >
           <i class="hidden pr-2 mdi mdi-cart sm:flex"></i>
           Encomendar Agora
@@ -21,14 +23,14 @@
         <img src="../../public/images/meat.png" alt="" />
       </div>
     </div>
-    <div class="flex flex-row items-center mx-16 xl:mx-64">
+    <div class="flex flex-row items-center mx-8 xl:mx-64">
       <hr class="flex-1 border-gray-200" />
       <div class="ml-8 text-center text-gray-400 lg:mx-8">
         <i class="text-xl mdi mdi-knife"></i>
       </div>
       <hr class="flex-1 hidden border-gray-200 lg:flex" />
     </div>
-    <div class="py-8 mx-16 xl:mx-64">
+    <div class="py-8 mx-8 xl:mx-64">
       <div class="flex flex-col w-full pb-8 text-center">
         <span class="text-lg font-bold tracking-wide uppercase"
           >Entrega ao domicílio</span

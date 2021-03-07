@@ -18,7 +18,7 @@
         </a>
       </div>
     </div> -->
-    <nav class="flex items-center justify-between w-full px-16 py-8 xl:px-64">
+    <nav class="flex items-center justify-between w-full px-8 py-8 xl:px-64">
       <div class="flex justify-center">
         <a href="" class="">
           <img class="h-12" src="../../public/images/logo.png" alt="" />
