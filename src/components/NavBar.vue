@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="sticky top-0 bg-white">
     <!-- <div
       class="items-center justify-between hidden w-full px-64 py-4 text-sm font-medium border-b border-gray-200 xl:flex"
     >
@@ -21,16 +21,16 @@
     <nav class="flex items-center justify-between w-full px-8 py-8 xl:px-64">
       <div class="flex justify-center">
         <a href="" class="">
-          <img class="h-12" src="../../public/images/logo.png" alt="" />
+          <img class="h-12" src="../../public/images/logo.webp" alt="" />
         </a>
       </div>
 
       <ul
         class="flex-row items-center justify-around hidden space-x-6 xl:space-x-12 xl:flex"
       >
-        <li>
+        <!-- <li>
           <a href="" class="navLink">Sobre Nós</a>
-        </li>
+        </li> -->
         <li>
           <a href="" class="navLink">Produtos</a>
         </li>
@@ -40,15 +40,6 @@
         <li>
           <a href="" class="navLink">Contactos</a>
         </li>
-        <!-- <li>
-          <a
-            href=""
-            class="flex items-center text-red-500 navLink hover:text-red-700"
-          >
-            Encomendar
-            <i class="pl-2 text-xl mdi mdi-cart" />
-          </a>
-        </li> -->
       </ul>
 
       <div class="flex justify-center xl:hidden">
@@ -75,7 +66,7 @@ export default {
 <style>
 .navLink {
   @apply font-bold;
-  @apply text-gray-700;
+  @apply text-gray-500;
   @apply text-sm;
   @apply uppercase;
   transition: all 0.2s;

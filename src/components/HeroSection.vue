@@ -6,12 +6,12 @@
       <div
         class="flex flex-col items-center text-center xl:text-left xl:items-start"
       >
-        <span class="text-4xl font-bold tracking-tight uppercase">
+        <h1 class="text-4xl font-bold tracking-tight text-red-500 uppercase">
           Confie na carne que consome.
-        </span>
-        <span class="pt-2 text-xl tracking-tight text-gray-400 uppercase">
+        </h1>
+        <h2 class="pt-2 text-xl tracking-tight text-gray-400 uppercase">
           Escolha qualidade, sem abdicar do melhor preço.
-        </span>
+        </h2>
         <button
           class="flex flex-row justify-center w-full px-8 py-4 mt-8 text-lg font-semibold text-center text-white uppercase transition bg-red-500 rounded hover:bg-red-700 sm:w-auto sm:text-left"
         >
@@ -20,53 +20,56 @@
         </button>
       </div>
       <div class="pt-8 xl:pt-0">
-        <img src="../../public/images/meat.png" alt="" />
+        <img src="../../public/images/meat.webp" alt="" />
       </div>
     </div>
-    <div class="flex flex-row items-center mx-8 xl:mx-64">
-      <hr class="flex-1 border-gray-200" />
-      <div class="ml-8 text-center text-gray-400 lg:mx-8">
-        <i class="text-xl mdi mdi-knife"></i>
+    <section-splitter :icon="'mdi-knife'" />
+    <div
+      class="grid grid-cols-2 gap-8 py-8 mx-8 font-semibold text-gray-400 uppercase lg:grid-cols-4 xl:mx-64"
+    >
+      <div class="flex flex-col items-center ">
+        <i class="pb-4 text-4xl text-red-500 mdi mdi-cart"></i>
+        <span>1. Encomende</span>
       </div>
-      <hr class="flex-1 hidden border-gray-200 lg:flex" />
+      <div class="flex flex-col items-center">
+        <i class="pb-4 text-4xl text-red-500 mdi mdi-package"></i>
+        <span>2. Receba</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <i class="pb-4 text-4xl text-red-500 mdi mdi-fire"></i>
+        <span>3. Cozinhe</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <i class="pb-4 text-4xl text-red-500 mdi mdi-silverware-variant"></i>
+        <span>4. Desfrute</span>
+      </div>
     </div>
-    <div class="py-8 mx-8 xl:mx-64">
-      <div class="flex flex-col w-full pb-8 text-center">
-        <span class="text-lg font-bold tracking-wide uppercase"
-          >Entrega ao domicílio</span
-        >
-        <span class="pt-2 text-xs font-semibold text-gray-400 uppercase"
-          >Conheça os 4 passos do nosso processo</span
-        >
+    <section-splitter :icon="'mdi-heart-box'" />
+    <div
+      class="flex flex-col items-center justify-between px-8 pt-8 xl:px-64 xl:flex-row "
+    >
+      <div class="pb-8 mx-auto xl:ml-0 xl:pb-0">
+        <img src="../../public/images/reviews.webp" alt="" />
       </div>
       <div
-        class="flex flex-col items-center justify-between space-y-10 font-semibold text-gray-500 uppercase lg:space-y-0 lg:items-center lg:flex-row text"
+        class="flex flex-col items-center pt-8 text-center xl:pt-0 xl:text-right xl:items-end"
       >
-        <div class="flex flex-col items-center lg:flex-row">
-          <i class="text-4xl text-red-500 lg:pr-8 mdi mdi-cart"></i>
-          <span>Encomende</span>
-        </div>
-        <div class="flex flex-col items-center lg:flex-row">
-          <i class="text-4xl text-red-500 lg:pr-8 mdi mdi-package"></i>
-          <span>Receba</span>
-        </div>
-        <div class="flex flex-col items-center lg:flex-row">
-          <i class="text-4xl text-red-500 lg:pr-8 mdi mdi-fire"></i>
-          <span>Cozinhe</span>
-        </div>
-        <div class="flex flex-col items-center lg:flex-row">
-          <i
-            class="text-4xl text-red-500 lg:pr-8 mdi mdi-silverware-variant"
-          ></i>
-          <span>Desfrute</span>
-        </div>
+        <h1 class="text-4xl font-bold tracking-tight text-red-500 uppercase">
+          Valorizamos a sua confiança.
+        </h1>
+        <h2 class="pt-2 text-xl tracking-tight text-gray-400 uppercase">
+          Veja alguns testemunhos dos nossos clientes.
+        </h2>
       </div>
     </div>
+    <section-splitter :icon="'mdi-map-marker-radius'" />
   </div>
 </template>
 
 <script>
+import SectionSplitter from "./SectionSplitter.vue";
 export default {
+  components: { SectionSplitter },
   name: "HeroSection",
 };
 </script>
